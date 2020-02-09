@@ -66,3 +66,18 @@ This is the initial tapedeck I used for this project.
 
 
 ### Raspberry Pi
+
+# Random notes
+
+## Connecting to serial console of Arduino
+
+### Cmdline but fragile
+
+```
+cu --parity=none --nostop -s 9600 -l /dev/ttyUSB0         # or /dev/ttyUSB1 etc.
+```
+
+### From arduino sketch IDE
+
+- `arduino &`
+- Tools -> Serial Monitor (Ctrl+Shift+M)
